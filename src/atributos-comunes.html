@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parrafo1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="parrafo1">Classes</p>
+    <p id="parrafo">identificador</p>
+    <p title="esto es un tooltip">titulo con tooltip</p>
+    <p data-ejemplo="datos de ejemplo" id="parrafo2">Datos pasados con la etiqueta</p>
+
+    <script>
+        const p = document.getElementById('parrafo');
+        const p2 = document.getElementById('parrafo2');
+
+
+        console.log(p.textContent);
+        console.log(p2.dataset.ejemplo);
+    </script>
+</body>
+
+</html>
